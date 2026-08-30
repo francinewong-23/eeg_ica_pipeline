@@ -9,11 +9,11 @@ An end-to-end Python pipeline built with **MNE-Python** to automatically identif
 Raw Electroencephalography (EEG) data is heavily contaminated by non-biological noise (line noise, baseline wander) and high-amplitude physiological artifacts (eye blinks, jaw clenches). This project implements an automated, reproducible data-cleaning workflow leveraging **Independent Component Analysis (ICA)** for blind source separation.
 
 ### Key Features
-* **Bandpass Filtering (1.0 – 40 Hz):** Eliminates low-frequency baseline drift (< 1.0 Hz) and high-frequency electromyographic (EMG) muscle noise using FIR filters.
-* **Notch Filtering (60 Hz):** Removes electrical grid hum.
-* **FastICA Decomposition:** Solves blind source separation to isolate continuous EEG signals into independent biological components.
-* **Automated Ocular Removal:** Uses EOG channel correlation (`ica.find_bads_eog`) to flag and isolate eye-blink components automatically.
-* **Quantitative Validation:** Computes signal variance reduction to objectively measure artifact removal quality.
+* **Bandpass Filtering (1.0 – 40 Hz) -** Eliminates low-frequency baseline drift (< 1.0 Hz) and high-frequency electromyographic (EMG) muscle noise using FIR filters.
+* **Notch Filtering (60 Hz) -** Removes electrical grid hum.
+* **FastICA Decomposition -** Solves blind source separation to isolate continuous EEG signals into independent biological components.
+* **Automated Ocular Removal -** Uses EOG channel correlation (`ica.find_bads_eog`) to flag and isolate eye-blink components automatically.
+* **Quantitative Validation -** Computes signal variance reduction to objectively measure artifact removal quality.
 
 ---
 
